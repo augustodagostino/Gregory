@@ -1,0 +1,8 @@
+D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\Gregory.deps.json
+D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\Gregory.runtimeconfig.json
+D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\Gregory.runtimeconfig.dev.json
+D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\Gregory.dll
+D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.csprojAssemblyReference.cache
+D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.AssemblyInfo.cs
