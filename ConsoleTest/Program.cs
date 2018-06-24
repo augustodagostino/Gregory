@@ -1,6 +1,7 @@
 ﻿using BusinessLayer;
 using BusinessLayer.Models;
 using System;
+using System.Linq;
 
 namespace ConsoleTest
 {
@@ -10,8 +11,9 @@ namespace ConsoleTest
         {
             using (var context = new GregoryContext())
             {
-                var chain = new Chain { Code="CODE1",Name="NAME 1" };
-                context.WTF.Add(chain);
+                var count = context.Chains.Count() + 1;
+                var chain = new Chain { Code="CODE"+ count, Name="NAME "+ count };
+                context.Chains.Add(chain);
                 context.SaveChanges();
 
                 Console.WriteLine(chain.UniqueId + ": " + chain.UniqueId);

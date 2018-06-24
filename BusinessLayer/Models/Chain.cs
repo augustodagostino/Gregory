@@ -1,8 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace BusinessLayer.Models
+﻿namespace BusinessLayer.Models
 {
-    [Table("Chain")]
     public class Chain : EditableObject
     {
 
@@ -10,7 +7,6 @@ namespace BusinessLayer.Models
         {
 
         }
-
 
         public string Code { get; set; }
         public string Name { get; set; }

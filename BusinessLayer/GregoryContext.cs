@@ -1,15 +1,14 @@
 ﻿using BusinessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Linq;
 
 namespace BusinessLayer
 {
     public class GregoryContext : DbContext
     {
-        public DbSet<Chain> WTF { get; set; }
+        public DbSet<Chain> Chains { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -18,6 +17,8 @@ namespace BusinessLayer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Model.GetEntityTypes().Where(w=> w.FindAnnotation("Relational:TableName").IsNull()).ToList().ForEach(e => e.Relational().TableName = e.DisplayName());
+
             MapUniqueId<Chain>(modelBuilder);
         }
 
