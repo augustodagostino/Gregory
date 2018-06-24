@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusinessLayer.Models
 {
     public abstract class EditableObject
     {
-
+        [Key]
+        public Guid UniqueId { get; set; }
     }
 }
