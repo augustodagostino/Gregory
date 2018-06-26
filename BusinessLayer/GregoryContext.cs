@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace BusinessLayer
         private PropertyBuilder MapUniqueId<T>(ModelBuilder modelBuilder) where T: EditableObject
         {
             return modelBuilder.Entity<T>().Property(c => c.UniqueId).HasColumnName(typeof(T).Name + "_Guid");
+        }
+
+        public EntityEntry<T> Add<T>(T newItem) where T : class
+        {
+            return Set<T>().Add(newItem);
         }
 
     }

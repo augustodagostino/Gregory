@@ -1,5 +1,8 @@
-﻿namespace BusinessLayer.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BusinessLayer.Models
 {
+    [Table("Chain")]
     public class Chain : EditableObject
     {
 
