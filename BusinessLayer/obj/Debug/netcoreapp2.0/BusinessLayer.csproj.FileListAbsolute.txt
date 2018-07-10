@@ -1,9 +1,0 @@
-D:\Visual Studio Projects\Gregory\BusinessLayer\bin\Debug\netcoreapp2.0\BusinessLayer.deps.json
-D:\Visual Studio Projects\Gregory\BusinessLayer\bin\Debug\netcoreapp2.0\BusinessLayer.dll
-D:\Visual Studio Projects\Gregory\BusinessLayer\bin\Debug\netcoreapp2.0\BusinessLayer.pdb
-D:\Visual Studio Projects\Gregory\BusinessLayer\obj\Debug\netcoreapp2.0\BusinessLayer.csprojAssemblyReference.cache
-D:\Visual Studio Projects\Gregory\BusinessLayer\obj\Debug\netcoreapp2.0\BusinessLayer.csproj.CoreCompileInputs.cache
-D:\Visual Studio Projects\Gregory\BusinessLayer\obj\Debug\netcoreapp2.0\BusinessLayer.AssemblyInfoInputs.cache
-D:\Visual Studio Projects\Gregory\BusinessLayer\obj\Debug\netcoreapp2.0\BusinessLayer.AssemblyInfo.cs
-D:\Visual Studio Projects\Gregory\BusinessLayer\obj\Debug\netcoreapp2.0\BusinessLayer.dll
-D:\Visual Studio Projects\Gregory\BusinessLayer\obj\Debug\netcoreapp2.0\BusinessLayer.pdb
