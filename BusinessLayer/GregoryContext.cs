@@ -9,8 +9,6 @@ namespace BusinessLayer
 {
     public class GregoryContext : DbContext
     {
-        public DbSet<Chain> Chains { get; set; }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Database=Gregory;Trusted_Connection=True;");
@@ -18,7 +16,7 @@ namespace BusinessLayer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Model.GetEntityTypes().Where(w=> w.FindAnnotation("Relational:TableName").IsNull()).ToList().ForEach(e => e.Relational().TableName = e.DisplayName());
+            //modelBuilder.Model.GetEntityTypes().Where(w=> w.FindAnnotation("Relational:TableName").IsNull()).ToList().ForEach(e => e.Relational().TableName = e.DisplayName());
 
             MapUniqueId<Chain>(modelBuilder);
         }
@@ -31,6 +29,11 @@ namespace BusinessLayer
         public EntityEntry<T> Add<T>(T newItem) where T : class
         {
             return Set<T>().Add(newItem);
+        }
+
+        public DbSet<T> Table<T>() where T : class
+        {
+            return Set<T>();
         }
 
     }

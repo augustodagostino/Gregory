@@ -11,13 +11,12 @@ namespace ConsoleTest
         {
             using (var context = new GregoryContext())
             {
-                var count = context.Chains.Count() + 1;
+                var count = context.Set<Chain>().Count() + 1;
                 var chain = new Chain { Code="CODE"+ count, Name="NAME "+ count };
                 context.Add(chain);
 
-                var first = context.Chains.OrderBy(o => o.Code).FirstOrDefault();
+                var first = context.Set<Chain>().OrderBy(o => o.Code).FirstOrDefault();
                 first.Name = "AHORA HAY " + count;
-
 
                 context.SaveChanges();
 

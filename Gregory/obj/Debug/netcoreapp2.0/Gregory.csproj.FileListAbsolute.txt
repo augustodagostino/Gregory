@@ -9,3 +9,6 @@ D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.Assemb
 D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\Gregory.pdb
 D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.dll
 D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.pdb
+D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\BusinessLayer.dll
+D:\Visual Studio Projects\Gregory\Gregory\bin\Debug\netcoreapp2.0\BusinessLayer.pdb
+D:\Visual Studio Projects\Gregory\Gregory\obj\Debug\netcoreapp2.0\Gregory.csproj.CopyComplete
