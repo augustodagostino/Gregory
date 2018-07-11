@@ -20,7 +20,9 @@ namespace ConsoleTest
 
                 context.SaveChanges();
 
-                Console.WriteLine(chain.UniqueId + ": " + chain.UniqueId);
+                var tabla = context.GetTableName<Chain>();
+
+                Console.WriteLine(chain.UniqueId);
             }
         }
     }
